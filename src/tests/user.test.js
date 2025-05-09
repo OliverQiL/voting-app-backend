@@ -9,7 +9,7 @@ describe('User Endpoints', () => {
   let adminUser, regularUser;
 
   beforeAll(async () => {
-    const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/voting-app-test';
+    const mongoUri = process.env.MONGODB_URI;
     await mongoose.connect(mongoUri);
 
     // Create test users

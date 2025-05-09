@@ -5,7 +5,7 @@ const User = require('../models/userModel');
 
 describe('Auth Endpoints', () => {
   beforeAll(async () => {
-    const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/voting-app-test';
+    const mongoUri = process.env.MONGODB_URI;
     await mongoose.connect(mongoUri);
   });
 
