@@ -152,6 +152,15 @@ src/
 - `name`: String (the option name)
 - `count`: Number (count of votes for this option)
 
+## Setting Up Admin Users
+By default, the first user is not an admin. To create an admin user:
+
+1. Register a user through the API or frontend
+2. Connect to your MongoDB database
+3. Locate the user in the users collection
+4. Update the isAdmin field to true
+5. The user will now have admin privileges
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
